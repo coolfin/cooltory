@@ -7,7 +7,10 @@ import classNames from "classnames";
 
 export default function Home() {
   return (
-    <Container>
+    <Container className={classNames(
+      'w-full',
+      'h-screen',
+    )}>s
     </Container>
   )
 }

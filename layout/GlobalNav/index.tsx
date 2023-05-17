@@ -1,11 +1,18 @@
 import { Container } from "@/components/Container"
 import { Tabs } from "@geist-ui/core"
 import classNames from "classnames"
+import { useRouter } from "next/router"
 
 const NAV = [
   '유니온', '장비', '레벨링', '숙제체커'
 ]
+
+const NAV_NAME = [
+  'union', 'eq', 'lv', 'check'
+]
+
 export const GlobalNav = () => {
+  const router = useRouter();
   return (
     <Container>
 
@@ -51,10 +58,14 @@ export const GlobalNav = () => {
         <Tabs
           initialValue="1"
           hideDivider
+
+          onChange={(v) => {
+            router.push(v)
+          }}
         >
           {
             NAV.map((v, index) => (
-              <Tabs.Item label={v} value={v} key={index}></Tabs.Item>
+              <Tabs.Item label={v} value={"/"+NAV_NAME[index]} key={index}></Tabs.Item>
             ))
           }
         </Tabs>
