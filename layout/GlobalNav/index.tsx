@@ -40,7 +40,7 @@ export const GlobalNav = () => {
           'hover:bg-slate-500',
           'hover:rounded-md',
         )}
-          onClick={() => window.location.replace('/')}
+          onClick={() => router.push('/')}
         >
           <img src="/reboot.jpeg" className={classNames(
             'w-10',
