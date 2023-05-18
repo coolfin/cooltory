@@ -1,7 +1,13 @@
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
-    getLayout?: (page: ReactElement) => ReactNode
-}
+  getLayout?: (page: ReactElement) => ReactNode;
+};
 
 export type AppPropsWithLayout = AppProps & {
-    Component: NextPageWithLayout
-}
+  Component: NextPageWithLayout;
+};
+
+export type CharacterType = {
+  name: string;
+  union: string;
+  link: string;
+};
