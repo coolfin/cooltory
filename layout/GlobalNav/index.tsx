@@ -2,9 +2,10 @@ import { Container } from "@/components/Container"
 import { Tabs } from "@geist-ui/core"
 import classNames from "classnames"
 import { useRouter } from "next/router"
+import { useEffect, useState } from "react"
 
 const NAV = [
-  '유니온', '장비', '레벨링', '숙제체커'
+  '유니온', '장비', '레벨링', //'숙제체커'
 ]
 
 const NAV_NAME = [
@@ -13,6 +14,13 @@ const NAV_NAME = [
 
 export const GlobalNav = () => {
   const router = useRouter();
+
+  const [activetab, setActiveTab] = useState<string>(router.pathname)
+
+  useEffect(() => {
+    setActiveTab(router.pathname);
+  }, [router.pathname]);
+
   return (
     <Container>
 
@@ -56,9 +64,8 @@ export const GlobalNav = () => {
         </div>
 
         <Tabs
-          initialValue="1"
+          value={activetab}
           hideDivider
-
           onChange={(v) => {
             router.push(v)
           }}

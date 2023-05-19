@@ -36,7 +36,14 @@ export default function Home() {
       'text-3xl',
       'text-white',
       'font-extrabold',
-    )}>{name}님, 안녕하세요 🙌
+    )}>{name}님, 안녕하세요 🙌<br/>
+    <span className={classNames(
+      'text-sm',
+      'text-gray-400',
+      'font-normal',
+
+      'mt-4'
+    )}>일 하러 가야겠죠? 🐝🐝</span>
     </Container>
   )
 }
