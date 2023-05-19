@@ -18,7 +18,8 @@ export default function Home() {
       setName(res)
 
     }else{
-      setName(localStorage.getItem('name'))
+      const nick = localStorage.getItem('name')
+      setName(nick || '')
     }
   },[])
   return (
