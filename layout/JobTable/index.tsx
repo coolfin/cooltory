@@ -17,12 +17,48 @@ export const JobTable = () => {
       return Array(43).fill([]);
     }
   });
+  const [isLineThrough, setIsLineThrough] = useState<boolean[]>(Array(43).fill(false));
   const [name, setName] = useState('')
-  
+
   useEffect(() => {
     const n = localStorage.getItem('name')
-    setName(n?n:'')
-  })
+    setName(n ? n : '')
+  }, [])
+
+  useEffect(() => {
+    //로컬스토리지에 저장
+    localStorage.setItem('c2', JSON.stringify(ckArr));
+
+    //레벨 합계 구하기
+    let total = 0;
+    ckArr.map((v: string[]) => {
+      if (v.length !== 0) {
+        //각 요소 중 최댓값을 total에 더해나가기
+        total += Math.max(...v.map((v) => parseInt(v)));
+      }
+    }
+    );
+    setTotalLv(total);
+
+
+    //체크박스가 3개가 되면 해당 인덱스의 isLineThrough을 true로 바꿔준다
+    ckArr.map((v: string[], index: number) => {
+      if (v.length === 3) {
+        //해당 인덱스의 isLineThrough을 true로 바꿔준다
+        setIsLineThrough((prev: boolean[]) => {
+          const newArr = [...prev];
+          newArr[index] = true;
+          return newArr;
+        });
+      } else {
+        setIsLineThrough((prev: boolean[]) => {
+          const newArr = [...prev];
+          newArr[index] = false;
+          return newArr;
+        });
+      }
+    })
+  }, [ckArr])
 
   const handleChecker = (v: string[], index: number) => {
     //저장 
@@ -34,22 +70,7 @@ export const JobTable = () => {
     );
   };
 
-  useEffect(() => {
-    //localstore
-    localStorage.setItem('c2', JSON.stringify(ckArr));
 
-    let total = 0;
-    ckArr.map((v: string[]) => {
-      if (v.length !== 0) {
-        //각 요소 중 최댓값을 total에 더해나가기
-        total += Math.max(...v.map((v) => parseInt(v)));
-      }
-    }
-    );
-    //console.log(total)
-    setTotalLv(total);
-
-  }, [ckArr])
   return (
     <>
       <div className={classNames(
@@ -91,7 +112,7 @@ export const JobTable = () => {
 
               'mr-10',
             )}>
-              <img src={`/icon/union/bronze_${String(Math.round(totalLv / 500) + 1)}.png`} className={classNames(
+              <img src={`/icon/union/bronze_${String(Math.floor(totalLv / 500) + 1)}.png`} className={classNames(
                 'w-2',
 
               )} />
@@ -169,8 +190,8 @@ export const JobTable = () => {
               'w-2/12',
               'text-xs',
 
-              { 'line-through': ckArr[index].length === 3 },
-              { 'text-red-500': ckArr[index].length === 3 },
+              { 'line-through': isLineThrough[index] },
+              { 'text-red-500': isLineThrough[index] },
 
             )}>{v['name']}</div>
             {/* 체크박스 */}
