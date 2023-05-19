@@ -1,5 +1,5 @@
 import { Container } from '@/components/Container'
-import { Card, Toggle } from '@geist-ui/core'
+import { Card } from '@geist-ui/core'
 import classNames from 'classnames'
 import React from 'react'
 

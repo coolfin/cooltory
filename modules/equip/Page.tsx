@@ -1,5 +1,5 @@
 import { Container } from '@/components/Container';
-import { Card, Collapse, Note } from '@geist-ui/core';
+import { Card, Collapse } from '@geist-ui/core';
 import classNames from 'classnames';
 import React from 'react';
 

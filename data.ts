@@ -1,4 +1,4 @@
-import { CharacterType } from '@/types';
+import { CharacterType } from '@/@types/next';
 
 export const characters: CharacterType[] = [
   //모험가
