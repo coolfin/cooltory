@@ -11,3 +11,11 @@ export type CharacterType = {
   union: string;
   link: string;
 };
+
+export type DopingType ={
+  url: string;
+  title: string;
+  content: string;
+
+  getin: string;
+}

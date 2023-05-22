@@ -1,4 +1,4 @@
-import { CharacterType } from '@/@types/next';
+import { CharacterType, DopingType } from '@/@types/next';
 
 export const characters: CharacterType[] = [
   //모험가
@@ -258,3 +258,203 @@ export const characters: CharacterType[] = [
   },
 
 ];
+
+export const exp_attack: DopingType[] = [
+  {
+    url: 'coupon',
+    title: '경험치 쿠폰',
+    content: "*[2-3]배",
+    getin: '경험치 쿠폰은 이벤트 상점, 출석 보상, 미접속 보상, 일요일 몬스터 파크 등으로 획득하실 수 있습니다.'
+  },
+  {
+    url: 'link',
+    title: '엘프의 축복[메르세데스]',
+    content: "15%",
+    getin : '10레벨 이상 캐릭터에서 링크스킬 전수를 통해 적용 가능합니다.'
+  },
+  {
+    url: 'monsterpark',
+    title: '익스트림 골드',
+    content: "10%",
+    getin : '차원의 거울을 통해 갈 수 있는 몬스터파크 내 라쿠에게 10코인을 주고 구매할 수 있습니다.'
+  },
+  {
+    url: 'mvp',
+    title: '경험치 뿌리기',
+    content: "50%",
+    getin : '확성기를 통해 주로 공지되며, 빠른이동 또는 B키 전문기술의 우상단 버튼을 통해 마이스터 빌 내에서 받으실 수 있습니다.'
+  },
+  {
+    url: 'potion',
+    title: '경험 축복의 비약',
+    content: "10%",
+    getin: '경험 축복의 비약 레시피를 통해 제작하실 수 있습니다. 10레벨 이상의 연금술 레벨을 권장드립니다. 2시간동안 지속됩니다.',
+  },
+  {
+    url: 'skill',
+    title: '홀리심볼',
+    content: "[20-35]%",
+    getin: '비숍이 아닌 직업은 5차스킬 V 공용코어로 쓰입니다.'
+  },
+
+  {
+    url: 'pendent',
+    title: '정령의 펜던트',
+    content: "[10-30]%",
+    getin: '이벤트 또는 출석 보상으로 획득하실 수 있습니다.'
+  },
+  {
+    url: 'zero',
+    title: '제로 유니온',
+    content: "[4-12]%",
+    getin: '육성하세요 ㅎ'
+  },
+  {
+    url: 'upper',
+    title: '쑥쑥 새싹 🐣',
+    content: "10%",
+    getin: '길라잡이 내 30레벨 보상'
+  },
+  {
+    url: 'ggotchi',
+    title: '쑥쑥 새싹 🐣',
+    content: "10%",
+    getin: '길라잡이 내 30레벨 보상'
+  },
+  {
+    url: 'other',
+    title: '버닝필드',
+    content: "[10-100]%",
+    getin: '사냥터 내 채널 별로 상이합니다.'
+  },
+  {
+    url: 'other',
+    title: '이벤트 경험치 스탯',
+    content: "?%",
+    getin: '이벤트 참여 시 추가로 얻을 수 있습니다.'
+  },
+  {
+    url: 'mesopotion',
+    title: '재물 획득의 비약 💰',
+    content: "재획용",
+    getin: '-'
+  },
+  {
+    url: 'mesobuff',
+    title: '유니온의 부 💰',
+    content: "재획용",
+    getin: '-'
+  },
+  {
+    url: 'netflix',
+    title: '넷플릭스 💰',
+    content: "재획용",
+    getin: '-'
+  },
+
+]
+//10레벨 향상의 비약 : 주스탯 +30
+//고보킬 : 보공 +20%
+//전영비 : 공마 + 30
+export const boss_attack: DopingType[] = [
+  {
+    url: 'guild',
+    title: '길드의 축복(더 큰)',
+    content: "공마 20(30)",
+    getin: '매주 월요일 좌측 💡 맨 아래 데이아의 지원을 통해 얻을 수 있습니다.'
+  },
+  
+  {
+    url: 'urus',
+    title: '우르스 뿌리기',
+    content: "공마 30",
+    getin: '우르스 맵 내 아이샤에게 구매할 수 있습니다.'
+  },
+
+  {
+    url: '275power',
+    title: '인기도 버프',
+    content: "공마 50",
+    getin: '트로피 의자를 타고있는 녀석들에게 1일 1회 얻을 수 있습니다.'
+  },
+
+  {
+    url: 'union',
+    title: '유니온의 힘(3단계)',
+    content: "공마 30",
+    getin: '마을의 빠른이동 유니온 상점에서 구매할 수 있습니다.'
+  },
+
+  {
+    url: 'mvp',
+    title: 'MVP 슈퍼파워 🐣',
+    content: "공마 30",
+    getin: '캐시샵 MVP 기프트팩에서 얻을 수 있습니다.'
+  },
+
+  {
+    url: 'babydragon',
+    title: '아기용의 이유식',
+    content: "공 7",
+    getin: '리프레 잡화상점에서 구매할 수 있습니다.'
+  },
+  {
+    url: 'mpgreen',
+    title: '익스트림 그린',
+    content: "공격속도 1단계",
+    getin: '차원의 거울을 통해 갈 수 있는 몬스터파크 내 라쿠에게 5코인을 주고 구매할 수 있습니다.'
+  },
+  {
+    url: 'mpred',
+    title: '익스트림 레드(블루)',
+    content: "공(마) 30",
+    getin: '차원의 거울을 통해 갈 수 있는 몬스터파크 내 라쿠에게 5코인을 주고 구매할 수 있습니다.'
+  },
+
+  {
+    url: 'meari',
+    title: '영웅의 메아리',
+    content: "공마 4%",
+    getin: '오르비스 탑 8층 중간 여신상에게 퀘스트를 진행해서 얻을 수 있습니다.'
+  },
+
+
+  {
+    url: 'nobless',
+    title: '길드스킬(크게 한 방)',
+    content: "크리티컬 데미지 30%",
+    getin: '길드에서 쓰세요.'
+  },
+
+  {
+    url: 'redpotion',
+    title: '반짝이는 빨간 별',
+    content: "보스 공격력 20%",
+    getin: '루타비스 보스에게 일정 확률로 드랍됩니다.'
+  },
+  {
+    url: 'bluepotion',
+    title: '반짝이는 파란 별',
+    content: "방어력 무시 20%",
+    getin: '루타비스 보스에게 일정 확률로 드랍됩니다.'
+  },
+  {
+    url: 'bosskiler',
+    title: '고급 보스 킬러의 비약',
+    content: "보스 공격력 20%",
+    getin: '연금술 제작(어려움)'
+  },
+  {
+    url: 'legendpotion',
+    title: '전설의 영웅 비약',
+    content: "공마 30",
+    getin: '연금술 제작'
+  },
+  {
+    url: '10thpotion',
+    title: '10단계 향상된 물약',
+    content: "주스탯 30",
+    getin: '연금술 제작'
+  },
+  
+]
