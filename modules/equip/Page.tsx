@@ -88,7 +88,7 @@ export const Page = () => {
             </Collapse>
             <Collapse title="CASE 3 [6블 6트]" subtitle="해당 직업 : 아크 라라">
               <div className="flex py-10 items-center">
-                <img src="/eq_4.PNG" className={classNames('w-40')} />
+                <img src="/eq_3.PNG" className={classNames('w-40')} />
                 <span className={classNames('text-xs', 'ml-12', 'font-bold')}>
                   <i className="text-red-200">블랙</i>(반지, 펜던트, 얼굴장식,
                   벨트, 모자, 망토)

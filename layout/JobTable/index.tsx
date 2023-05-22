@@ -34,16 +34,17 @@ export const JobTable = () => {
     ckArr.map((v: string[]) => {
       if (v.length !== 0) {
         //각 요소 중 최댓값을 total에 더해나가기
-        total += Math.max(...v.map((v) => parseInt(v)));
+        let temp_lv =  Math.max(...v.map((v) => parseInt(v)));
+        total += temp_lv;
       }
     }
     );
     setTotalLv(total);
 
 
-    //체크박스가 3개가 되면 해당 인덱스의 isLineThrough을 true로 바꿔준다
+    //체크박스가 4개가 되면 해당 인덱스의 isLineThrough을 true로 바꿔준다
     ckArr.map((v: string[], index: number) => {
-      if (v.length === 3) {
+      if (v.length === 4) {
         //해당 인덱스의 isLineThrough을 true로 바꿔준다
         setIsLineThrough((prev: boolean[]) => {
           const newArr = [...prev];
@@ -51,6 +52,7 @@ export const JobTable = () => {
           return newArr;
         });
       } else {
+
         setIsLineThrough((prev: boolean[]) => {
           const newArr = [...prev];
           newArr[index] = false;
@@ -58,6 +60,7 @@ export const JobTable = () => {
         });
       }
     })
+
   }, [ckArr])
 
   const handleChecker = (v: string[], index: number) => {
@@ -83,7 +86,7 @@ export const JobTable = () => {
         'gap-y-4',
 
         'mt-4',
-        'mb-12',
+        'mb-20',
       )}>
         <Card>
           <p className={classNames(
@@ -111,8 +114,12 @@ export const JobTable = () => {
               'h-16',
 
               'mr-10',
+
+              'flex',
+              'justify-center',
+              'items-center',
             )}>
-              <img src={`/icon/union/bronze_${String(Math.floor(totalLv / 500) + 1)}.png`} className={classNames(
+              <img src={`/icon/union/union_${String(Math.floor(totalLv / 1000) + 1)}.png`} className={classNames(
                 'w-2',
 
               )} />
@@ -129,6 +136,65 @@ export const JobTable = () => {
           </div>
         </Card>
       </div>
+      <div>
+        {/* 내가 키운 캐릭터 */}
+        <div className={classNames(
+          'w-fit',
+          'text-sm',
+          'font-bold',
+        )}>
+              내가 키워야 될 직업들 👼 <i className='text-xs font-normal ml-2 underline decoration-cyan-400'>200 달성 체크 시 자동 삭제됩니다!</i>
+        </div>
+        {/* 직업 목록 */}
+        <div className={classNames(
+          'w-full',
+          'h-40',
+
+          'mt-12',
+
+          'grid',
+          'grid-cols-5',
+          'gap-x-2',
+          'gap-y-2',
+
+          'overflow-scroll',
+        )}>
+          {
+            characters.map((v, index: number) => (
+              !isLineThrough[index] && <div className={classNames(
+                'w-full',
+
+                'text-sm',
+
+                'flex',
+                'justify-center',
+                'items-center',
+
+                'border-slate-200',
+                'border',
+                'rounded-full',
+
+                'py-2',
+                
+              )}>
+                {v['name']}
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <div className={classNames(
+        'w-full',
+        'h-12',
+
+        'mt-20',
+
+        'flex',
+        'items-center',
+
+      )}>
+        <i className='text-sm font-extrabold mr-1'>유니온 및 링크효과</i> 설명 <i className='text-xs font-normal ml-2 text-slate-200'>아래부터 체크박스 일일히 눌러주세요..ㅎ</i>
+      </div>
       <div
         className={classNames(
           'w-full',
@@ -141,8 +207,8 @@ export const JobTable = () => {
 
           'gap-y-12',
 
-          'py-12',
-          'mb-4',
+          'py-4',
+          'mb-12',
 
           'overflow-scroll'
         )}
@@ -200,6 +266,7 @@ export const JobTable = () => {
                 <Checkbox value="70">70</Checkbox>
                 <Checkbox value="120">120</Checkbox>
                 <Checkbox value="140">140</Checkbox>
+                <Checkbox value="200">200</Checkbox>
               </Checkbox.Group>
             </div>
             {/* 유니온효과 */}
