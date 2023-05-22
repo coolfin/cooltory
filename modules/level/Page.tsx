@@ -5,7 +5,9 @@ import React from 'react'
 
 export const Page = () => {
   return (
-    <Container>
+    <Container className={classNames(
+      'mt-12',
+    )}>
 
       <Card hoverable shadow>
         <p className={classNames(
@@ -68,14 +70,15 @@ export const Page = () => {
 
         <span>
           -70 : [조용한 습지, 축축한 습지 : 드레이크] <br/>
-          -85 : [붉은 산호 숲 : 포이즌 푸퍼] or [구름공원 6 : 러스터픽시] <br/>
-          -95 : [유랑단의 텐트 : 갈색 모래토끼] or [갱도 4 : 경비로봇 L] <br/>
-          -100: [연구소 C-2구역 : 로이드, 네오 휴로이드] or [관계자 외 출입금지 : 사이티]
+          -81 : [붉은 산호 숲 : 포이즌 푸퍼] or [구름공원 6 : 러스터픽시] <br/>
+          -91 : [유랑단의 텐트 : 갈색 모래토끼] or [갱도 4 : 경비로봇 L] <br/>
+          -101: [연구소 C-2구역 : 로이드, 네오 휴로이드] or [관계자 외 출입금지 : 사이티]
         </span>
         <span>
         <b className='text-slate-200'> ❔ 101레벨 부터 좌측의 ⭐을 눌러 <i className='text-yellow-300'>메이프릴 아일랜드</i>를 절대 챙기세요</b> <br/>
-          -115: [미나르숲 동쪽 경계 : 듀얼 비틀] or [하늘둥지 3: 🌟5 블러드 하프]<br/>
-          -126: [삐뚤어진 시간 : 🌟26 듀얼 파이렛]<br/>
+        <b className='text-slate-200'> ❔ 101레벨 부터 길드 가입을 통해 <i className='text-yellow-300'>길드 경험치 및 스타포스</i>를 절대 챙기세요</b> <br/>
+          -110: [미나르숲 동쪽 경계 : 듀얼 비틀] or [하늘둥지 3: 🌟5 블러드 하프]<br/>
+          -126: [삐뚤어진 시간 (뒤틀린 시간의 길 3) : 🌟26 듀얼 파이렛]<br/>
           -141: [시련의 동굴 3 : 🌟50 파이어독]
         </span>
 

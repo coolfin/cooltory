@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { characters } from '@/data';
 import classNames from 'classnames';
-import { Card, Checkbox } from '@geist-ui/core';
+import { Card, Checkbox, Slider, Tooltip } from '@geist-ui/core';
 
 export const JobTable = () => {
   const [totalLv, setTotalLv] = useState(0);
@@ -34,7 +34,7 @@ export const JobTable = () => {
     ckArr.map((v: string[]) => {
       if (v.length !== 0) {
         //각 요소 중 최댓값을 total에 더해나가기
-        let temp_lv =  Math.max(...v.map((v) => parseInt(v)));
+        let temp_lv = Math.max(...v.map((v) => parseInt(v)));
         total += temp_lv;
       }
     }
@@ -85,7 +85,7 @@ export const JobTable = () => {
 
         'gap-y-4',
 
-        'mt-4',
+        'mt-12',
         'mb-20',
       )}>
         <Card>
@@ -143,7 +143,7 @@ export const JobTable = () => {
           'text-sm',
           'font-bold',
         )}>
-              내가 키워야 될 직업들 👼 <i className='text-xs font-normal ml-2 underline decoration-cyan-400'>200 달성 체크 시 자동 삭제됩니다!</i>
+          내가 키워야 될 직업들 👼 <i className='text-xs font-normal ml-2 underline decoration-cyan-400'>200 달성 체크 시 자동 삭제됩니다!</i>
         </div>
         {/* 직업 목록 */}
         <div className={classNames(
@@ -158,10 +158,12 @@ export const JobTable = () => {
           'gap-y-2',
 
           'overflow-scroll',
+
         )}>
           {
             characters.map((v, index: number) => (
-              !isLineThrough[index] && <div className={classNames(
+              !isLineThrough[index] &&
+              <div className={classNames(
                 'w-full',
 
                 'text-sm',
@@ -175,9 +177,11 @@ export const JobTable = () => {
                 'rounded-full',
 
                 'py-2',
-                
+
+                'hover:cursor-pointer',
+                'hover:opacity-50',
               )}>
-                {v['name']}
+                  {v['name']}
               </div>
             ))
           }
