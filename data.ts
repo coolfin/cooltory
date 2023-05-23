@@ -317,9 +317,9 @@ export const exp_attack: DopingType[] = [
   },
   {
     url: 'ggotchi',
-    title: '쑥쑥 새싹 🐣',
+    title: '떡꼬치 🐣',
     content: "10%",
-    getin: '길라잡이 내 30레벨 보상'
+    getin: '이벤트 주간 보스코인 상점에서 구매'
   },
   {
     url: 'other',
