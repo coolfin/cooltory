@@ -91,6 +91,8 @@ export const JobTable = () => {
         <Card>
           <p className={classNames(
             'text-sm',
+
+            'max-sm:text-xs',
           )}>💡 입력하시는 정보는 <i className={classNames(
             'font-bold',
 
@@ -159,6 +161,8 @@ export const JobTable = () => {
 
           'overflow-scroll',
 
+          'max-sm:grid-cols-2',
+
         )}>
           {
             characters.map((v, index: number) => (
@@ -181,7 +185,7 @@ export const JobTable = () => {
                 'hover:cursor-pointer',
                 'hover:opacity-50',
               )}>
-                  {v['name']}
+                {v['name']}
               </div>
             ))
           }
@@ -196,8 +200,10 @@ export const JobTable = () => {
         'flex',
         'items-center',
 
+        'text-sm',
+        'max-sm:text-xs'
       )}>
-        <i className='text-sm font-extrabold mr-1'>유니온 및 링크효과</i> 설명 <i className='text-xs font-normal ml-2 text-slate-200'>아래부터 체크박스 일일히 눌러주세요..ㅎ</i>
+        <i className='font-extrabold mr-1 '>유니온 | 링크효과</i> 설명 <i className='font-normal ml-2 text-slate-200'>아래부터 체크박스 일일히 눌러주세요..ㅎ</i>
       </div>
       <div
         className={classNames(
@@ -230,7 +236,7 @@ export const JobTable = () => {
 
             'text-sm',
             'text-slate-200',
-            'font-extrabold'
+            'font-extrabold',
           )}
         >
           {/* 직업 */}
@@ -253,6 +259,9 @@ export const JobTable = () => {
 
               'text-sm',
               'text-slate-300',
+
+
+              'max-sm:text-xs'
             )}
           >
             {/* 직업 */}

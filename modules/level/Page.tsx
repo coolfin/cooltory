@@ -36,6 +36,10 @@ export const Page = () => {
         'text-sm',
         'text-indigo-200',
 
+        'max-sm:px-4',
+        'max-sm:gap-y-2',
+        'max-sm:text-xs'
+
       )}>
         <h3 className='text-white'>준비물 🧳</h3>
         <span className={classNames(

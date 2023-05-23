@@ -83,7 +83,7 @@ export const Page = () => {
                   <i className="text-purple-200">트레져</i> (모자, 한벌옷, 견장,
                   장갑, 신발, 펜던트, 무기)
                 </span>
-                <i>>></i>
+                <i>👉</i>
                 {/* 업글 장비 */}
                 <span className={classNames('text-xs', 'ml-12', 'font-bold')}>
                   <i className="text-cyan-200">카오스 루타비스</i> (모자, 상의, 하의,
@@ -122,7 +122,7 @@ export const Page = () => {
                   <br />
                   <i className="text-purple-200">트레져</i> (펜던트, 무기, 한벌옷, 견장, 장갑, 신발, 보조무기)
                 </span>
-                <i>>></i>
+                <i>👉</i>
                 {/* 업글 장비 */}
                 <span className={classNames('text-xs', 'ml-12', 'font-bold')}>
                   <i className="text-cyan-200">카오스 루타비스</i> (모자, 상의, 하의,
@@ -161,7 +161,7 @@ export const Page = () => {
                   <br />
                   <i className="text-purple-200">트레져</i> (펜던트, 무기, 한벌옷, 견장, 장갑, 신발)
                 </span>
-                <i>>></i>
+                <i>👉</i>
                 {/* 업글 장비 */}
                 <span className={classNames('text-xs', 'ml-12', 'font-bold')}>
                   <i className="text-cyan-200">카오스 루타비스</i> (모자, 상의, 하의,
@@ -202,7 +202,7 @@ export const Page = () => {
                   <br />
                   <i className="text-purple-200">트레져</i> (모자, 펜던트, 한벌옷, 견장, 장갑, 신발)
                 </span>
-                <i>>></i>
+                <i>👉</i>
                 {/* 업글 장비 */}
                 <span className={classNames('text-xs', 'ml-12', 'font-bold')}>
                   <i className="text-cyan-200">카오스 루타비스</i> (모자, 상의, 하의,

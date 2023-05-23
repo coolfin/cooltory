@@ -21,6 +21,8 @@ export const Exp = () => {
                         'grid',
                         'grid-cols-3',
                         'gap-4',
+
+                        'max-sm:grid-cols-1',
                     )}>
                         {exp_attack.map((v, index) => (
                             <User src={`/icon/exp/exp_${v['url']}.png`} name={v['title']} onClick={() => {
@@ -42,6 +44,8 @@ export const Exp = () => {
                         'grid',
                         'grid-cols-3',
                         'gap-4',
+
+                        'max-sm:grid-cols-1',
                     )}>
                         {boss_attack.map((v, index) => (
                             <User src={`/icon/boss/${v['url']}.png`} name={v['title']} onClick={() => {
