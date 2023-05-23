@@ -98,7 +98,7 @@ export const Page = () => {
                   <br/>
                   <i className='text-green-200'>보스장신구</i> (실버블라썸링, 고피아 반지, 성배, 매커네이터(도미), <br/> 아쿠아틱레터,데아시두스(지옥의 불꽃), 크리스탈 웬투스 뱃지)
                 </span>
-                <img src="/case1.PNG" className={classNames('w-40')} />
+                <img src="/case1.png" className={classNames('w-40')} />
               </div>
             </Collapse>
             <Collapse title="CASE 2 [6블 7트]" subtitle="해당 직업 : 은월">
@@ -137,7 +137,7 @@ export const Page = () => {
                   <br/>
                   <i className='text-green-200'>보스장신구</i> (실버블라썸링, 고피아 반지, 성배, 매커네이터(도미), <br/> 아쿠아틱레터,데아시두스(지옥의 불꽃), 크리스탈 웬투스 뱃지,<br/> 응축된 힘의 결정석, 골든 클로버 벨트)
                 </span>
-                <img src="/case2.PNG" className={classNames('w-40')} />
+                <img src="/case2.png" className={classNames('w-40')} />
               </div>
             </Collapse>
             <Collapse title="CASE 3 [6블 6트]" subtitle="해당 직업 : 아크 라라">
@@ -176,7 +176,7 @@ export const Page = () => {
                   <br/>
                   <i className='text-green-200'>보스장신구</i> (실버블라썸링, 고피아 반지, 성배, 매커네이터(도미), <br/> 아쿠아틱레터,데아시두스(지옥의 불꽃), 크리스탈 웬투스 뱃지)
                 </span>
-                <img src="/case3.PNG" className={classNames('w-40')} />
+                <img src="/case3.png" className={classNames('w-40')} />
               </div>
             </Collapse>
             <Collapse
@@ -217,7 +217,7 @@ export const Page = () => {
                   <br/>
                   <i className='text-green-200'>보스장신구</i> (실버블라썸링, 고피아 반지, 성배, 매커네이터(도미), <br/> 아쿠아틱레터,데아시두스(지옥의 불꽃), 크리스탈 웬투스 뱃지)
                 </span>
-                <img src="/case4.PNG" className={classNames('w-40')} />
+                <img src="/case4.png" className={classNames('w-40')} />
               </div>
             </Collapse>
           </Collapse.Group>
