@@ -1,6 +1,9 @@
 import { Container } from "@/components/Container"
 import { Card, Tabs } from "@geist-ui/core"
-import Exp from "./exp/Page"
+
+import { ExpPage } from "./exp/Page"
+import {FlagPage} from "./flag/Page"
+
 import classNames from "classnames"
 
 export const Page = () => {
@@ -29,14 +32,18 @@ export const Page = () => {
                     <Tabs hideDivider>
                         {/* 도핑 */}
                         <Tabs.Item label="도핑" value="1">
-                            <Exp />
+                            <ExpPage />
+                        </Tabs.Item>
+                        {/* 플래그 */}
+                        <Tabs.Item label="플래그" value="2">
+                            <FlagPage /> 
                         </Tabs.Item>
                         {/* 리부트 스펙업 순서 */}
-                        <Tabs.Item label="스펙업 순서" value="2">
+                        <Tabs.Item label="스펙업 순서" value="3">
                         🚧 준비 중 입니다 🚧
                         </Tabs.Item>
                         {/* 던전 프로스트 */}
-                        <Tabs.Item label="던전 프로스트" value="3" >🚧 준비 중 입니다 🚧</Tabs.Item>
+                        <Tabs.Item label="던전 프로스트" value="4" >🚧 준비 중 입니다 🚧</Tabs.Item>
                     </Tabs>
                 </div>
             </div>

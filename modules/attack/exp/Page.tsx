@@ -3,7 +3,7 @@ import { Card, Collapse, User } from '@geist-ui/core'
 import classNames from 'classnames'
 import React from 'react'
 
-export const Exp = () => {
+export const ExpPage = () => {
     return (
         <div className={classNames(
 
@@ -63,4 +63,4 @@ export const Exp = () => {
     )
 }
 
-export default Exp
+export default ExpPage
