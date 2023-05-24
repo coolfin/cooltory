@@ -32,7 +32,7 @@ export const GlobalFooter = () => {
                 'text-xs',
             )}>
                 Last Update<br/>
-                <b>2023.05.23 [Ver. 1.3]</b>
+                <b>2023.05.24 [Ver. 1.4]</b>
             </div>
         </Container>
     )
