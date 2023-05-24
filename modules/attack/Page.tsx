@@ -5,6 +5,7 @@ import { ExpPage } from "./exp/Page"
 import {FlagPage} from "./flag/Page"
 
 import classNames from "classnames"
+import DgPage from "./frost/Page"
 
 export const Page = () => {
     return (
@@ -39,11 +40,13 @@ export const Page = () => {
                             <FlagPage /> 
                         </Tabs.Item>
                         {/* 리부트 스펙업 순서 */}
-                        <Tabs.Item label="스펙업 순서" value="3">
+                        <Tabs.Item label="링크 순서" value="3">
                         🚧 준비 중 입니다 🚧
                         </Tabs.Item>
                         {/* 던전 프로스트 */}
-                        <Tabs.Item label="던전 프로스트" value="4" >🚧 준비 중 입니다 🚧</Tabs.Item>
+                        <Tabs.Item label="던전 프로스트" value="4" >
+                            <DgPage/>
+                        </Tabs.Item>
                     </Tabs>
                 </div>
             </div>

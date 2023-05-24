@@ -1,5 +1,5 @@
 import { boss_attack, exp_attack } from '@/data'
-import { Card, Collapse, User } from '@geist-ui/core'
+import { Collapse, User } from '@geist-ui/core'
 import classNames from 'classnames'
 import React from 'react'
 

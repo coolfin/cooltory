@@ -184,7 +184,9 @@ export const JobTable = () => {
 
                 'hover:cursor-pointer',
                 'hover:opacity-50',
-              )}>
+              )}
+                key={v['name']}
+              >
                 {v['name']}
               </div>
             ))

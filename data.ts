@@ -114,7 +114,7 @@ export const characters: CharacterType[] = [
   {
     name: '미하일🦋',
     union: '최대 HP 증가',
-    link: '스탠스 효과(액티브)',
+    link: '상태이상 저항',
   },
 
   //레지스탕스
