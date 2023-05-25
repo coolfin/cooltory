@@ -40,7 +40,7 @@ export const ExpPage = () => {
             <div>
 
                 <Collapse shadow title='주간보스 도핑' subtitle='연금술 비약들은 적절한 구글링을 추천드립니다 엣큥'>
-                <div className={classNames(
+                    <div className={classNames(
                         'grid',
                         'grid-cols-3',
                         'gap-4',
@@ -56,7 +56,32 @@ export const ExpPage = () => {
                             )}>{v['content']}</User>
 
                         ))}
-                    </div> 
+                        <div className={classNames(
+                            'py-2',
+                            'col-span-3',
+
+                            'max-sm:col-span-1',
+
+                            'text-sm',
+                            'text-gray-200',
+
+
+                        )}> <span className='underline decoration-cyan-500'>비약2개 / 같은 스탯 물약 간 도핑은 불가능하며, <br/>아래는 불가능한 예시입니다.</span>
+                            <div className={classNames(
+                                'pt-2',
+
+                                'text-xs',
+
+                                'grid',
+                                'grid-cols-3',
+                                'max-sm:grid-cols-1',
+                            )}>
+                            <User src='/icon/boss/bosskiler.png' name="고급 보스 킬러의 비약 + 고급 관통의 비약"/>
+                            <User src='/icon/boss/redpotion.png' name="고급 보스 킬러의 비약 + 반빨별"/>
+                            <User src='/icon/boss/bluepotion.png' name="고급 관통의 비약 + 반파별"/>
+                            </div>
+                        </div>
+                    </div>
                 </Collapse>
             </div>
         </div>
