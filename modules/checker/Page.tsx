@@ -3,7 +3,6 @@ import { Card, User } from '@geist-ui/core'
 import classNames from 'classnames'
 import React, { useEffect, useState } from 'react'
 import dayjs from 'dayjs'
-import { type } from 'os'
 
 const PLAYER: string[] = [
   '🍳본캐', '🐥부캐', '🐣쀼캐', '🥚쀼부캐'
@@ -32,6 +31,17 @@ function Page() {
     }
 
   },[])
+
+  //매일 자정이 되면 초기화
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if(dayjs().hour() === 0 && dayjs().minute() === 0 && dayjs().second() === 0) {
+        setIsDone(new Array(4).fill(new Array(7).fill(false)))
+      }
+    }, 1000)
+    return () => clearInterval(interval)
+  }, [])
+
   //localstorage에 저장
   useEffect(() => {
     localStorage.setItem('isDone', JSON.stringify(isDone))
@@ -49,6 +59,9 @@ function Page() {
       <div className={classNames(
         'mt-12',
         'mb-4',
+
+        'grid',
+        'gap-y-4',
       )}>
         <Card>
           <p className={classNames(
@@ -57,6 +70,12 @@ function Page() {
             'max-sm:text-xs'
           )}>🙏 클릭으로 지울 수 있으며, 추가는 최대 4개까지만 가능합니다! <i className='font-extrabold text-red-200'>과도한 게임은 어쩌구 저쩌구..</i></p>
         </Card>
+        <Card>
+          <p className={classNames(
+            
+            'text-sm',
+            'max-sm:text-xs'
+          )}>주간보스의 초기화 날짜는 <i className='font-extrabold decoration-red-600 underline'>목요일</i>, 그 외 퀘스트는 <i className='font-extrabold decoration-blue-600 underline'>일요일</i>에 초기화됩니다.  </p></Card>
       </div>
       <div className={classNames(
         'w-full',
