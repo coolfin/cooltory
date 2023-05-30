@@ -1,120 +1,182 @@
 import { CharacterType, DopingType } from '@/@types/next';
 
+
+// 링크 우선도
+// 1. 데벤져
+// 2. 호영
+// 3. 메르
+// 4. 아크
+// 5. 키네
+// 6. 라라
+// 7. 에반
+// 8. 팬텀
+// 9. 일리움
+// 10. 데슬
+// 11. 엔버
+// 12. 루미
+// 13. 패파
+// 14. 보마
+// 15. 신궁
+// 16. 카데나
+// 17. 소마
+// 18. 윈브
+// 19. 플위
+// 20. 스커
+// 21. 나워
+// 22. 섀도
+// 23. 나로
+// 24. 듀블
+// 25. 루미
+// 26. 아델
+// 27. 제논
+// 28. 불독
+// 29. 썬콜
+// 30. 비숍
+// 31. 카인
+// 32. 아델
+// 33. 블래
+// 34. 메카
+// 35. 와헌
+// 36. 배메
+
 export const characters: CharacterType[] = [
   //모험가
   {
     name: '히어로🗡',
     union: 'STR 증가',
     link: '일정량 이하 HP 회복',
+    order: "-"
   },
   {
     name: '팔라딘🗡',
     union: 'STR 증가',
     link: '일정량 이하 HP 회복',
+    order: "-"
   },
   {
     name: '다크나이트🗡',
     union: '최대 HP 증가',
     link: '일정량 이하 HP 회복',
+    order: "-"
   },
 
   {
     name: '아크메이지(불,독)🦯',
     union: '최대 MP 증가',
     link: '약점 중첩 데미지, 방어력 무시',
+    order: "28"
   },
 
   {
     name: '아크메이지(썬,콜)🦯',
     union: 'INT 증가',
     link: '약점 중첩 데미지, 방어력 무시',
+    order: "29"
+
   },
 
   {
     name: '비숍🦯',
     union: '최대 MP 증가',
     link: '약점 중첩 데미지, 방어력 무시',
+    order: "30"
   },
 
   {
     name: '보우마스터🏹',
     union: 'DEX 증가',
     link: '크리티컬 확률 증가, 몬컬 등록 확률 증가',
+    order: "14"
   },
 
   {
     name: '신궁🏹',
     union: '크리티컬 확률 증가',
     link: '크리티컬 확률 증가, 몬컬 등록 확률 증가',
+    order: "15"
   },
 
   {
     name: '패스파인더🏹',
     union: 'DEX 증가',
     link: '크리티컬 확률 증가, 몬컬 등록 확률 증가',
+    order: "13"
   },
   {
     name: '나이트로드🔪',
     union: '크리티컬 확률 증가',
     link: '상태이상 추가 데미지',
+    order: "23",
   },
   {
     name: '섀도어🔪',
     union: 'LUK 증가',
     link: '상태이상 추가 데미지',
+    order: "22",
   },
   {
     name: '듀얼블레이드🔪',
     union: 'LUK 증가',
     link: '상태이상 추가 데미지',
+    order: "24",
   },
 
   {
     name: '바이퍼🦜',
     union: 'STR 증가',
     link: '올스탯 증가, 최대 HP/MP 증가, 데미지 흡수량 증가',
+    order: "-",
   },
 
   {
     name: '캡틴🦜',
     union: '소환수 지속 시간 증가',
     link: '올스탯 증가, 최대 HP/MP 증가, 데미지 흡수량 증가',
+    order: "-",
   },
   {
-    name: '캐논마스터🦜',
+    name: '캐논슈터🦜',
     union: 'STR 증가',
     link: '올스탯 증가, 최대 HP/MP 증가, 데미지 흡수량 증가',
+    order: "-",
   },
   //시그너스
   {
     name: '소울마스터🦋',
     union: '최대 HP 증가',
     link: '공/마/상태이상 내성/모든속성 내성 증가',
+    order: "17",
   },
   {
     name: '플레임위자드🦋',
     union: 'INT 증가',
     link: '공/마/상태이상 내성/모든속성 내성 증가',
+    order: "19",
   },
   {
     name: '윈드브레이커🦋',
     union: 'DEX 증가',
     link: '공/마/상태이상 내성/모든속성 내성 증가',
+    order: "18",
   },
   {
     name: '나이트워커🦋',
     union: 'LUK 증가',
     link: '공/마/상태이상 내성/모든속성 내성 증가',
+    order: "21",
   },
   {
     name: '스트라이커🦋',
     union: 'STR 증가',
     link: '공/마/상태이상 내성/모든속성 내성 증가',
+    order: "20",
   },
   {
     name: '미하일🦋',
     union: '최대 HP 증가',
     link: '상태이상 저항',
+    order: "-",
+    
   },
 
   //레지스탕스
@@ -123,27 +185,32 @@ export const characters: CharacterType[] = [
     name: '블래스터🚩',
     union: '방어율 무시 증가',
     link: '부활 시 일정 시간 무적',
+    order: "33",
   },
 
   {
     name: '배틀메이지🚩',
     union: 'INT 증가',
     link: '부활 시 일정 시간 무적',
+    order: "36",
   },
   {
     name: '와일드헌터🚩',
     union: '공격 시(20%) 데미지 증가',
     link: '부활 시 일정 시간 무적',
+    order: "35",
   },
   {
     name: '메카닉🚩',
     union: '버프 지속 시간 증가',
     link: '부활 시 일정 시간 무적',
+    order: "34",
   },
   {
     name: '제논🚩',
     union: 'STR/DEX/LUK 증가',
     link: '올스탯% 증가',
+    order: "27",
   },
 
   //데몬
@@ -151,11 +218,13 @@ export const characters: CharacterType[] = [
     name: '데몬슬레이어😈',
     union: '상태이상 증가',
     link: '보스 공격시 데미지% 증가',
+    order: "10",
   },
   {
     name: '데몬어벤져😈',
     union: '보스 공격력 증가',
     link: '데미지% 증가',
+    order: "1",
   },
 
   //영웅
@@ -164,47 +233,57 @@ export const characters: CharacterType[] = [
     name: '아란👑',
     union: '타격 시 HP 회복',
     link: '콤보킬 경험치 획득량 증가',
+    order: "-",
+
   },
   {
     name: '에반👑',
     union: '타격 시 MP 회복',
     link: '룬 지속시간 증가',
+    order: "7",
   },
   {
     name: '루미너스👑',
     union: 'INT 증가',
     link: '방어율 무시% 증가',
+    order: "12",
   },
   {
     name: '메르세데스👑',
     union: '스킬 쿨타임 감소',
     link: '경험치 획득량% 증가',
+    order: "3",
   },
   {
     name: '팬텀👑',
     union: '메소 획득량 증가',
     link: '크리티컬 확률% 증가',
+    order: "8",
   },
   {
     name: '은월👑',
     union: '크리티컬 데미지 증가',
     link: '구사일생',
+    order: "-",
   },
   //노바
   {
     name: '카이저🐲',
     union: 'STR 증가',
     link: 'HP% 증가',
+    order: "-",
   },
   {
     name: '카데나⛓',
     union: 'LUK 증가',
     link: '낮은레벨 공격 시 데미지% 증가, 상태이상 걸린 적 공격 시 데미지% 증가',
+    order: "16",
   },
   {
     name: '엔젤릭버스터🔮',
     union: 'DEX 증가',
     link: '10초간 데미지 증가(액티브)',
+    order: "11",
   },
 
   // 레프
@@ -212,49 +291,58 @@ export const characters: CharacterType[] = [
     name: '일리움💎',
     union: 'INT 증가',
     link: '거리 이동 중첩 당 데미지% 증가',
+    order: "9",
   },
   {
     name: '아크👿',
     union: 'STR 증가',
     link: '전투 상태 지속 시 데미지% 증가',
+    order: "4",
   },
 
   {
     name: '키네시스🔳',
     union: 'INT 증가',
     link: '크리티컬 데미지 증가',
+    order: "5",
   },
   {
     name: '호영🐯',
     union: 'LUK 증가',
     link: '방어율 무시, 피 100%인 적 공격 시 데미지% 증가',
+    order: "2",
   },
   {
     name: '제로⏳',
     union: '경험치 획득량 증가',
     link: '피격 데미지 감소, 방어율 무시',
+    order: "-",
   },
   {
     name: '아델🌙',
     union: 'STR 증가',
     link: '같은 맵 내 파티원 1명 당 데미지, 보스공격 시 데미지% 증가',
+    order: "26",
   },
 
   {
     name: '카인🏹',
     union: 'DEX 증가',
     link: '사전준비 후 20초간 데미지% 증가(40초 쿨타임)',
+    order: "31",
   },
 
   {
     name: '라라🐰',
     union: 'INT 증가',
     link: '데미지% 증가, 일반 몬스터 20마리 처치 시 데미지% 증가',
+    order: "6",
   },
   {
     name: '칼리🧕',
     union: 'LUK 증가',
     link: '데미지% 증가, 매 초 HP/MP% 회복',
+    order: "NEW",
   },
 
 ];

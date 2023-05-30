@@ -10,6 +10,8 @@ export type CharacterType = {
   name: string;
   union: string;
   link: string;
+  order: string;
+  uorder?: string;
 };
 
 export type DopingType ={

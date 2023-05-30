@@ -2,10 +2,11 @@ import { Container } from "@/components/Container"
 import { Card, Tabs } from "@geist-ui/core"
 
 import { ExpPage } from "./exp/Page"
-import {FlagPage} from "./flag/Page"
+import { FlagPage } from "./flag/Page"
 
 import classNames from "classnames"
 import DgPage from "./frost/Page"
+import OrderPage from "./order/Page"
 
 export const Page = () => {
     return (
@@ -37,15 +38,44 @@ export const Page = () => {
                         </Tabs.Item>
                         {/* 플래그 */}
                         <Tabs.Item label="플래그" value="2">
-                            <FlagPage /> 
+                            <FlagPage />
                         </Tabs.Item>
                         {/* 리부트 스펙업 순서 */}
-                        <Tabs.Item label="링크 순서" value="3">
-                        🚧 준비 중 입니다 🚧
+                        <Tabs.Item label="육성 순서" value="3">
+                            <OrderPage />
                         </Tabs.Item>
                         {/* 던전 프로스트 */}
                         <Tabs.Item label="던전 프로스트" value="4" >
-                            <DgPage/>
+                            <DgPage />
+                        </Tabs.Item>
+                        <Tabs.Item label="프로텍트 에스페라" value="5" >
+                            <div className={classNames(
+                                'flex',
+                                'flex-col',
+                            )}>
+                                <span className={classNames('text-xs', 'text-gray-500')}>
+                                    ref{' '}
+                                    <a
+                                        href="https://www.inven.co.kr/board/maple/2304/28788"
+                                        target="_blank"
+                                    >
+                                        메이플스토리 인벤
+                                    </a>
+                                </span>
+                                <div className={classNames(
+                                    'w-full',
+                                    'h-full',
+
+                                    'flex',
+                                    'justify-center',
+                                    'items-center',
+
+                                    'pt-12',
+                                )}>
+                                    <img src="/icon/espera.png" alt="프로텍트 에스페라" />
+                                </div>
+                            </div>
+
                         </Tabs.Item>
                     </Tabs>
                 </div>
