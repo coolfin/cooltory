@@ -75,7 +75,8 @@ export const OrderPage = () => {
         <Table.Column prop="name" label="직업" />
         <Table.Column prop="link" label="링크스킬 효과" />
         <Table.Column prop="union" label="유니온 점령효과" />
-        <Table.Column prop="order" label="우선순위" />
+        <Table.Column prop="order" label="링크 순서" />
+        <Table.Column prop="uorder" label="유니온 순서" />
       </Table>
     </div>
   )

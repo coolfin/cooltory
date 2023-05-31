@@ -11,7 +11,7 @@ export type CharacterType = {
   union: string;
   link: string;
   order: string;
-  uorder?: string;
+  uorder: string;
 };
 
 export type DopingType ={
