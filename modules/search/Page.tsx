@@ -1,9 +1,28 @@
 import { Container } from '@/components/Container'
+import axios from 'axios'
 import classNames from 'classnames'
 import React, { useState } from 'react'
 
+
 export const Page = () => {
     const [value, setValue] = useState<string>()
+
+    //axios로 api 호출
+    const handleSearch = async () => {
+        try {
+            const res = await axios({
+                url: `/api/characters`,
+                params: {
+                    name: value
+                },
+                method: 'GET',
+            })
+            console.log(res)
+        } catch (e) {
+            alert(e);
+        }
+    }
+
     return (
         <Container>
             <div className={classNames(
@@ -37,15 +56,17 @@ export const Page = () => {
                         setValue(e.target.value)
                     }}
 
-                    onKeyPress={(e) => {
+                    onKeyPress={async (e) => {
                         //이벤트 전파 막기
                         e.stopPropagation()
                         if (e.key === 'Enter' && value?.trim() === '') {
                             alert('캐릭터 명을 입력해 주세요')
+                            setValue('')
                             return
                         }
                         else if (e.key === 'Enter' && value?.trim() !== '') {
-                            console.log(value)
+                            alert(value)
+                            handleSearch()
                         }
                     }}
                 />
