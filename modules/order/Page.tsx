@@ -1,17 +1,34 @@
+import { Container } from '@/components/Container'
 import { characters } from '@/data'
-import { Card, Collapse, Table } from '@geist-ui/core'
+import { Collapse, Table } from '@geist-ui/core'
 import classNames from 'classnames'
 import React from 'react'
 
 export const OrderPage = () => {
   return (
-    <div className={classNames(
+    <Container className={classNames(
       'max-sm:overflow-x-scroll',
       'max-sm:text-xs',
       'max-sm:whitespace-nowrap',
 
       'py-4',
+      'mt-12',
     )}>
+      <div className={classNames(
+        'w-fit',
+
+        'max-sm:font-sm',
+
+        'mb-4',
+        'p-2',
+
+        'rounded-md',
+        'hover:bg-white',
+        
+
+      )}>
+        <a href='https://docs.google.com/spreadsheets/d/12l0GoZA2Yyvil9sV0N9XTHDC7ym-hHi3gTPTdtjPEjE/edit?usp=sharing' target='_blank'>스프레드 시트에서 한 눈에 확인하기 </a>
+      </div>
       <div className={classNames(
         'w-full',
         'grid',
@@ -39,7 +56,6 @@ export const OrderPage = () => {
             모험가 궁수(어드벤쳐러 큐리어스)<br />
             라라(자연의 벗)<br />
             선택 3개 👉 <br />
-            모험가 궁수(어드벤쳐러 큐리어스)<br />
             카데나(인텐시브 어썰트) <br />
             칼리(이네이트 기프트) <br/>
           </i>
@@ -78,7 +94,7 @@ export const OrderPage = () => {
         <Table.Column prop="order" label="링크 순서" />
         <Table.Column prop="uorder" label="유니온 순서" />
       </Table>
-    </div>
+    </Container>
   )
 }
 

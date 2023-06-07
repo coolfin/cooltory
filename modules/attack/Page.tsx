@@ -6,7 +6,7 @@ import { FlagPage } from "./flag/Page"
 
 import classNames from "classnames"
 import DgPage from "./frost/Page"
-import OrderPage from "./order/Page"
+import OrderPage from "../order/Page"
 
 export const Page = () => {
     return (
@@ -39,10 +39,6 @@ export const Page = () => {
                         {/* 플래그 */}
                         <Tabs.Item label="플래그" value="2">
                             <FlagPage />
-                        </Tabs.Item>
-                        {/* 리부트 스펙업 순서 */}
-                        <Tabs.Item label="육성 순서" value="3">
-                            <OrderPage />
                         </Tabs.Item>
                         {/* 던전 프로스트 */}
                         <Tabs.Item label="던전 프로스트" value="4" >
