@@ -42,9 +42,9 @@ export const Page = () => {
                             <FlagPage />
                         </Tabs.Item>
                         {/* 던전 프로스트 */}
-                        <Tabs.Item label="던전 프로스트" value="3" >
+                        {/* <Tabs.Item label="던전 프로스트" value="3" >
                             <DgPage />
-                        </Tabs.Item>
+                        </Tabs.Item> */}
                         {/* 미드나잇체이서 */}
                         <Tabs.Item label="미드나잇 체이서" value="4" >
                             <MidnightPage />
