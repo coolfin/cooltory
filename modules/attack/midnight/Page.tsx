@@ -107,8 +107,8 @@ export const MidnightPage = () => {
                   //v는 selected[i]에서는 반대 기능을 해야 함
                   {'invisible': v},
                   )}>
-                {/* <img src={`/icon/chaser/place_${i}.png`} alt="미드나잇 체이서" /> */}
-                <img alt='chaser' src='http://via.placeholder.com/300x300'/>
+                 <img src={`/icon/chaser/${i+1}.png`} alt="미드나잇 체이서" /> 
+
               </div>
 
             ))}
