@@ -193,10 +193,11 @@ function Page() {
                   ["몬스터파크", "2회", "monster_park"],
                   ["우르스", "3회", "urus"],
                   ["일일보스", "", "boss"],
-                  ["레오나 찬스", "3회", "event"],
-                  ["위시오브", "출석", "event"],
-                  ["던전프로스트", "1회","dongeon"],
-                  ["챌린저스", "500개","event"]
+                  ["메이프릴", "2000마리", "event"],
+                  ["사전예약", "출석", "event"],
+              //    ["위시오브", "출석", "event"],
+            //      ["던전프로스트", "1회","dongeon"],
+              //    ["챌린저스", "500개","event"]
                   ].map((val : string[], index) =>(<User src={`/icon/hw/${val[2]}.png`} name={val[0]} key={index + "_daily"} onClick={() => {
                     const temp = [...isDone];
                     temp[i][index] = !temp[i][index]
