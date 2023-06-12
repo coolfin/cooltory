@@ -21,3 +21,15 @@ export type DopingType ={
 
   getin: string;
 }
+
+export type UserType = {
+  name: string;
+  world: string;
+  guild: string;
+  job: string;
+  level: number;
+  spec: Object;
+  imageUrl: string;
+
+  error?: string;
+}

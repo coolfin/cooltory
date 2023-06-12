@@ -22,7 +22,7 @@ export const Page = () => {
                     <p className={classNames(
                         'text-sm',
                         'py-2',
-                    )}>📸 각 이미지는 클릭 시 <i className={classNames(
+                    )}>📸 도핑 공략의 각 이미지는 클릭 시 <i className={classNames(
                         'text-blue-500',
                     )}>입수 방법</i>이 표시됩니다. 또한, <i className="decoration-cyan-400 underline">[🐣]</i>은 얻을 수 없을 수 있는 도핑입니다.</p>
                 </Card>
