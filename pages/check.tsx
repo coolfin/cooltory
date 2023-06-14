@@ -1,1 +1,1 @@
-export {default} from '@/modules/checker/Page'
+export {default} from '@/modules/checkr_summer/Page'

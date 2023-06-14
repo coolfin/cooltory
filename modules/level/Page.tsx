@@ -46,13 +46,13 @@ export const Page = () => {
           'text-indigo-200',
           'mb-12',
         )}>
-          키우려는 직업의 블랙 보조무기를 메모리아에서 사전에 뚫어놓기 <br />
+          <i className='font-bold decoration-blue-500 underline'>절대절대 101레벨에 모든 이벤트를 받고 육성하자</i> <br />
           몬스터파크 익스트림 골드 🧂 <br />
           몬스터파크 익스트림 그린 🧂 <br />
           몬스터파크 익스트림 레드(공격력) / 블루(마력)  🧂<br />
-          새싹칭호 <a onClick={() => {
+          <a onClick={() => {
             alert('길라잡이 30레벨 보상획득으로 얻을 수 있는 \n개꿀 쑥쑥 새싹 칭호입니다🌟\n설치 칸에 있으며, 창고를 통해 옮길 수 있습니다.')
-          }}>🌱</a> <br />
+          }}>새싹칭호 🌱</a> <br />
           경험치쿠폰(3배짜리 1개 2배는 선택) </span>
 
 {/* 
@@ -105,7 +105,7 @@ export const Page = () => {
           -101: [연구소 C-2구역 : 로이드, 네오 휴로이드] or [관계자 외 출입금지 : 사이티]
         </span>
         <span>
-        <b className='text-slate-200'> ❔ 101레벨 부터 좌측의 ⭐을 눌러 <i className='text-yellow-300'>메이프릴 아일랜드</i>를 절대 챙기세요</b> <br/>
+        <b className='text-slate-200'> ❔ 101레벨 부터 좌측의 ⭐을 눌러 <i className='text-yellow-300'>이덴티스크</i>를 절대 챙기세요</b> <br/>
         <b className='text-slate-200'> ❔ 101레벨 부터 길드 가입을 통해 <i className='text-yellow-300'>길드 경험치 및 스타포스</i>를 절대 챙기세요</b> <br/>
           -110: [미나르숲 동쪽 경계 : 듀얼 비틀] or [하늘둥지 3: 🌟5 블러드 하프]<br/>
           -126: [삐뚤어진 시간 (뒤틀린 시간의 길 3) : 🌟26 듀얼 파이렛]<br/>

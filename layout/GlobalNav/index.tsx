@@ -5,11 +5,11 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 
 const NAV = [
-   '육성순서','레벨링', '공략','숙제체커',//'유니온',
+   '캐릭터 검색','육성순서','레벨링', '공략','숙제',//'유니온',
 ]
 
 const NAV_NAME = [
-  'order','lv', 'attack' ,'check',// 'union',
+  'search', 'order','lv', 'attack' ,'check',// 'union',
 ]
 
 export const GlobalNav = () => {

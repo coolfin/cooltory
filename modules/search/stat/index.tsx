@@ -28,6 +28,42 @@ export const UserStat = ({ stat }: { stat: StatType }) => {
       'max-sm: text-xs',
     )}>
 
+      {/* 주스탯 */}
+      <div className={classNames(
+        'w-full',
+        'h-1/6',
+
+        'grid',
+        'grid-cols-4',
+        'gap-2',
+
+        'justify-items-center',
+        'content-center',
+
+      )}>
+        {
+          [[impStat.str, "STR"], [impStat.dex, "DEX"], [impStat.int, "INT"], [impStat.luk, "LUK"]].map(([key, name]) => (
+            <div className={classNames(
+              'w-full',
+
+              'flex',
+              'justify-center',
+              'items-center',
+
+              'font-bold',
+
+              'underline',
+              'decoration-red-200',
+
+              {'border-r border-slate-50': name !== 'LUK'},
+            )}
+            key={name+"_stat"}
+            >
+              {name + " : "}  {(Number(key)/10000).toFixed(1)}
+            </div>
+          ))
+        }
+      </div>
       {/* 스공 */}
       <div className={classNames(
         'w-full',
@@ -67,43 +103,6 @@ export const UserStat = ({ stat }: { stat: StatType }) => {
             +Math.floor(impStat.statAtkHigh/10000)+"만"
           }
         </div>
-      </div>
-
-      {/* 주스탯 */}
-      <div className={classNames(
-        'w-full',
-        'h-1/6',
-
-        'grid',
-        'grid-cols-4',
-        'gap-2',
-
-        'justify-items-center',
-        'content-center',
-
-      )}>
-        {
-          [[impStat.str, "STR"], [impStat.dex, "DEX"], [impStat.int, "INT"], [impStat.luk, "LUK"]].map(([key, name]) => (
-            <div className={classNames(
-              'w-full',
-
-              'flex',
-              'justify-center',
-              'items-center',
-
-              'font-bold',
-
-              'underline',
-              'decoration-red-200',
-
-              {'border-r border-slate-50': name !== 'LUK'},
-            )}
-            key={name+"_stat"}
-            >
-              {name + " : "}  {(Number(key)/10000).toFixed(1)}
-            </div>
-          ))
-        }
       </div>
 
       {/* 크뎀 보공 방무  */}
