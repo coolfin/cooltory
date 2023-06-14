@@ -156,9 +156,7 @@ export const Page = () => {
                                     'flex',
                                     'justify-center',
                                     'items-center',
-
-                                    'max-sm:flex-col',
-                                    'max-sm:mb-4',
+                                    'max-sm:mb-2',
                                 )}>
                                     <div className={classNames(
                                         'w-1/2',
@@ -184,8 +182,7 @@ export const Page = () => {
                                     'justify-center',
                                     'items-center',
 
-                                    'max-sm:flex-col',
-                                    'max-sm:mb-4',
+                                    'max-sm:mb-2',
                                 )}>
                                     <div className={classNames(
                                         'w-1/2',
@@ -213,7 +210,7 @@ export const Page = () => {
                                     'justify-start',
                                     'items-center',
 
-                                    'max-sm:flex-col',
+                                    'max-sm:mb-2',
                                 )}>
                                     <div className={classNames(
                                         'w-1/2',
@@ -241,9 +238,7 @@ export const Page = () => {
                                     'justify-start',
                                     'items-center',
 
-                                    'max-sm:flex-col',
-
-                                    'max-sm:py-4'
+                                    'max-sm:mb-2'
                                 )}>
                                     <div className={classNames(
                                         'w-1/2',
