@@ -16,7 +16,7 @@ export const Page = () => {
           'font-extrabold',
 
           'hover:cursor-pointer',
-        )}>💡 더 효율적인 레벨업 루트가 있다면 쿨핀에게..</p>
+        )}>💡 경험치 배율이 개편되며 리부트도 +15레벨 기준으로 움직이게 됩니다. 더 효율적인 레벨업 장소가 있다면 쿨핀에게 DM 주세요</p>
       </Card>
 
       <div className={classNames(
@@ -34,7 +34,7 @@ export const Page = () => {
         'justify-center',
 
         'text-sm',
-        'text-indigo-200',
+        'text-slate-400',
 
         'max-sm:px-4',
         'max-sm:gap-y-2',
@@ -53,9 +53,11 @@ export const Page = () => {
           <a onClick={() => {
             alert('길라잡이 30레벨 보상획득으로 얻을 수 있는 \n개꿀 쑥쑥 새싹 칭호입니다🌟\n설치 칸에 있으며, 창고를 통해 옮길 수 있습니다.')
           }}>새싹칭호 🌱</a> <br />
-          경험치쿠폰 </span>
+          경험치쿠폰 <br />
+          ...이후 경험치 도핑 탭을 참고할 것 <a href='/attack'>바로가기</a></span>
 
-{/* 
+
+        {/* 
 80~ : 갱도2 / 갱도4 / 방어시스템연구소 / 사헬지대 / 잠자는사막&꿈꾸는사막
 
 90~ : 관출 / 폭군의성채로가는길(95이상 유니온 베이스있을때)
@@ -82,36 +84,49 @@ export const Page = () => {
  */}
 
 
-        <h3 className='text-white'>141 루트⚡</h3>
+        <h3 className='text-white'>1~141 루트⚡</h3>
         <span>
-          <b className='text-slate-200'> ❔ 각 서버를 돌면서 <i className='text-red-300'>버닝 필드</i>가 가장 높은 곳을 우선으로 사냥해 주세요</b> <br/>
-          -10 : 직업별 튜토리얼 <br />
-          -20 : [골렘의 사원3 : 파이어골렘]<br />
-          -30 : [들개들의 싸움터 1 : 스펙터 들개]
+          <b className='text-slate-200'> ❔ 각 서버를 돌면서 <i className='text-red-300'>사냥 관련 룬을</i>우선으로 해 주세요</b> <br /> <br />
+          1-10 : 직업별 튜토리얼 <br />
+          10-30 : [들개들의 싸움터 1 : 스펙터 들개], [사원 내부 3: 성난 시궁쥐] <i className='font-extrabold underline decoration-red-500'>룬을 절대 까 제발</i>
         </span>
-        
+
         <span>
-          <b className='text-slate-200'> ❔ 테마던전을 <i className='text-purple-300'>엘리넬 리에나</i>로 하는 이유 : 장신구를 많이 줌</b> <br/>
-          <b className='text-slate-200'> ❔ 35레벨 부터 <i className='text-cyan-300'>마이스터빌</i> 즉시이동으로 절대 경뿌 챙기기</b> <br/>
-          -45 : 요정학원 엘리넬 또는 골드비치<br />
-          -60 : 리에나 해협
+          <b className='text-slate-200'> ❔ 테마던전을 <i className='text-purple-300'>엘리넬 리에나</i>로 하는 이유 : 장신구를 많이 줌</b> <br />
+          <b className='text-slate-200'> ❔ 35레벨 부터 <i className='text-cyan-300'>마이스터빌</i> 즉시이동으로 절대 경뿌 챙기기</b> <br /> <br />
+          30-41(2) : 요정학원 엘리넬<br />
+          42-51 : 리에나 해협<br />
+          51-60 : [조용한 습지, 축축한 습지 : 카파 드레이크(66)], [차가운 바람, 서늘한 동굴 : 아이스 드레이크(68)] <br />
+          60-70 : [하늘계단 3 : 라이오너(71)], [구름공원 6 : 러스터픽시(74)], [붉은 산호 숲 : 포이즌 푸퍼(79)]<br />
+          70-76 : [유랑단의 텐트 : 갈색 모래토끼] or [갱도 4 : 경비로봇 L] <br />
+          80-92: [연구소 C-2구역 : 로이드, 네오 휴로이드(95)] or [관계자 외 출입금지 : 사이티(95)]
+        </span>
+        <span>
+          <b className='text-slate-200'> ❔ 101레벨 부터 좌측의 ⭐을 눌러 <i className='text-yellow-300'>이덴티스크</i>를 절대 챙기세요</b> <br />
+          <b className='text-slate-200'> ❔ 101레벨 부터 길드 가입을 통해 <i className='text-yellow-300'>길드 경험치 및 스타포스</i>를 절대 챙기세요</b> <br />
+          <b className='text-slate-200'> ❔ 101레벨 마약 버프를 받고 <i className='text-red-300'>노말 자쿰</i>을 도륙내 주세요</b> <br />  <br />
+          <b className='text-slate-200'> ❔ 133-135 구간에서 메소 충당을 위해 <i className='text-red-300'>아랫마을 현상금 퀘스트</i>를 고려할 수 있어요 </b> <br /><br/>
+          92-104 : [미나르숲 동쪽 경계 : 듀얼 비틀(104)], [하늘둥지 2, 3: 🌟5 블러드 하프(107)]<br />
+          104-126 : [삐뚤어진 시간 (뒤틀린 시간의 길 3) : 🌟26 듀얼 파이렛(119)], [잊혀진 회랑 : 🌟28 타나토스(122)]<br />
+          126-135 : [시련의 동굴 3 : 🌟50 파이어독(135)] 
+        </span>
+
+        <h3 className='text-white mt-12'>141~200 루트⚡</h3>
+        <span>
+        <b className='text-slate-200'> ❔ 해당 구간부터는 <i className='text-yellow-300'>스타포스</i></b>를 충분히 챙겨주셔야 합니다. <br/>
+        <b className='text-slate-200'> ❔ 170+ 구간에서 딜이 안되면 <i className='text-red-300'>크리티아스</i> 스토리를 밀면서 해보세요 </b> <br/>
+        <b className='text-slate-200'> ❔ 185+ 구간에서 딜이 안되면 <i className='text-red-300'>뾰족귀 여우마을</i> 테마던전을 해보세요 </b> <br /><br/>
+          135-160 : [2층 카페 4 : 🌟80 포도맛 젤리주스(155)], [2층 카페 5 : 🌟80 증기뿜는 커피머신(155)] ... + <br />
+          160-180 : [복도 H01 : 🌟140 뉴그레이 블랙(180)], [제 1연무장 : 🌟120 정식기사 A,B(168,170)] <br />
+          180-199 : [황혼의 페리온 거친협곡 : 에인션트 골렘 , 버려진 발굴 지역 : 변형된 우드,스톤마스크(194, 195)]  <br />
+          199-200 : 헤이븐 멍청이 퀘스트
         </span>
 
 
+        <h3 className='text-white mt-12'>200 이상 루트</h3>
         <span>
-          -70 : [조용한 습지, 축축한 습지 : 드레이크] <br/>
-          -81 : [붉은 산호 숲 : 포이즌 푸퍼] or [구름공원 6 : 러스터픽시] <br/>
-          -91 : [유랑단의 텐트 : 갈색 모래토끼] or [갱도 4 : 경비로봇 L] <br/> 
-          -101: [연구소 C-2구역 : 로이드, 네오 휴로이드] or [관계자 외 출입금지 : 사이티]
+          곧 업데이트 예정..
         </span>
-        <span>
-        <b className='text-slate-200'> ❔ 101레벨 부터 좌측의 ⭐을 눌러 <i className='text-yellow-300'>이덴티스크</i>를 절대 챙기세요</b> <br/>
-        <b className='text-slate-200'> ❔ 101레벨 부터 길드 가입을 통해 <i className='text-yellow-300'>길드 경험치 및 스타포스</i>를 절대 챙기세요</b> <br/>
-          -110: [미나르숲 동쪽 경계 : 듀얼 비틀] or [하늘둥지 3: 🌟5 블러드 하프]<br/>
-          -126: [삐뚤어진 시간 (뒤틀린 시간의 길 3) : 🌟26 듀얼 파이렛]<br/>
-          -141: [시련의 동굴 3 : 🌟50 파이어독]
-        </span>
-
       </div>
     </Container>
   )
