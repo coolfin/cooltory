@@ -391,6 +391,7 @@ export const exp_attack: DopingType[] = [
     getin: '비숍이 아닌 직업은 5차스킬 V 공용코어로 쓰입니다.'
   },
 
+
   {
     url: 'pendent',
     title: '정령의 펜던트',
@@ -550,6 +551,12 @@ export const boss_attack: DopingType[] = [
     content: "주스탯 30",
     getin: '연금술 제작'
   },
+  {
+    url: 'vip',
+    title: 'VIP 버프 🐣',
+    content: "마약",
+    getin: '이벤트 상점에서 구매하실 수 있습니다.'
+  }
 
   // {
   //   url: 'ggotchi',
@@ -558,4 +565,100 @@ export const boss_attack: DopingType[] = [
   //   getin: '이벤트 주간 보스코인 상점에서 구매'
   // }
   
+]
+
+//이벤트용 변수
+export const exp_event: DopingType[] = [
+  {
+    url: 'coupon',
+    title: '경험치 쿠폰',
+    content: "*[2-3]배",
+    getin: '경험치 쿠폰은 이벤트 상점, 출석 보상, 미접속 보상, 일요일 몬스터 파크 등으로 획득하실 수 있습니다.'
+  },
+  {
+    url: 'link',
+    title: '메르/에반/아란 링크스킬',
+    content: "",
+    getin : '10레벨 이상 캐릭터에서 링크스킬 전수를 통해 적용 가능합니다.'
+  },
+  {
+    url: 'monsterpark',
+    title: '익스트림 골드',
+    content: "10%",
+    getin : '차원의 거울을 통해 갈 수 있는 몬스터파크 내 라쿠에게 10코인을 주고 구매할 수 있습니다.'
+  },
+  {
+    url: 'mvp',
+    title: '경험치 뿌리기',
+    content: "50%",
+    getin : '확성기를 통해 주로 공지되며, 빠른이동 또는 B키 전문기술의 우상단 버튼을 통해 마이스터 빌 내에서 받으실 수 있습니다.'
+  },
+  {
+    url: 'potion',
+    title: '경험 축복의 비약',
+    content: "10%",
+    getin: '경험 축복의 비약 레시피를 통해 제작하실 수 있습니다. 10레벨 이상의 연금술 레벨을 권장드립니다. 2시간동안 지속됩니다.',
+  },
+  {
+    url: 'skill',
+    title: '홀리심볼',
+    content: "[20-35]%",
+    getin: '비숍이 아닌 직업은 5차스킬 V 공용코어로 쓰입니다.'
+  },
+
+  {
+    url: 'pendent',
+    title: '정령의 펜던트',
+    content: "[10-30]%",
+    getin: '이벤트 또는 출석 보상으로 획득하실 수 있습니다.'
+  },
+  {
+    url: 'zero',
+    title: '제로 유니온',
+    content: "[4-12]%",
+    getin: '육성하세요 ㅎ'
+  },
+  {
+    url: 'upper',
+    title: '쑥쑥 새싹 🐣',
+    content: "10%",
+    getin: '길라잡이 내 30레벨 보상'
+  },
+  // {
+  //   url: 'ggotchi',
+  //   title: '떡꼬치 🐣',
+  //   content: "10%",
+  //   getin: '이벤트 주간 보스코인 상점에서 구매'
+  // },
+  {
+    url: 'other',
+    title: '이벤트 경험치 스탯',
+    content: "?%",
+    getin: '이벤트 참여 시 추가로 얻을 수 있습니다.'
+  },
+
+  {
+    url: 'rune',
+    title: '사냥터 룬',
+    content: "+100%",
+    getin: '사냥터에서 찾을 수 있습니다. (에반 룬 착용 필수)'
+  },
+  {
+    url: 'other',
+    title: '하이퍼스탯(경험치)',
+    content: "?%",
+    getin: '하이퍼스탯에서 투자하실 수 있습니다.'
+  },
+  {
+    url: 'other',
+    title: '유니온(경험치)',
+    content: "?%",
+    getin: '유니온 공격대에서 투자하실 수 있습니다.'
+  },
+  {
+    url: 'vip',
+    title: 'VIP 버프 🐣',
+    content: "15%",
+    getin: '이벤트 상점에서 구매하실 수 있습니다.'
+  }
 ]
