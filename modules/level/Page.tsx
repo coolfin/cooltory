@@ -104,7 +104,7 @@ export const Page = () => {
         <span>
           <b className='text-slate-200'> ❔ 101레벨 부터 좌측의 ⭐을 눌러 <i className='text-yellow-300'>이덴티스크</i>를 절대 챙기세요</b> <br />
           <b className='text-slate-200'> ❔ 101레벨 부터 길드 가입을 통해 <i className='text-yellow-300'>길드 경험치 및 스타포스</i>를 절대 챙기세요</b> <br />
-          <b className='text-slate-200'> ❔ 101레벨 마약 버프를 받고 <i className='text-red-300'>노말 자쿰</i>을 도륙내 주세요</b> <br />  <br />
+          <b className='text-slate-200'> ❔ 101레벨 마약 버프를 받고 <i className='text-red-300'>노말 자쿰</i>을 도륙내 주세요</b> <br /> 
           <b className='text-slate-200'> ❔ 133-135 구간에서 메소 충당을 위해 <i className='text-red-300'>아랫마을 현상금 퀘스트</i>를 고려할 수 있어요 </b> <br /><br/>
           92-104 : [미나르숲 동쪽 경계 : 듀얼 비틀(104)], [하늘둥지 2, 3: 🌟5 블러드 하프(107)]<br />
           104-126 : [삐뚤어진 시간 (뒤틀린 시간의 길 3) : 🌟26 듀얼 파이렛(119)], [잊혀진 회랑 : 🌟28 타나토스(122)]<br />
