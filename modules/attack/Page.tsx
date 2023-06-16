@@ -8,6 +8,8 @@ import classNames from "classnames"
 import DgPage from "./frost/Page"
 import OrderPage from "../order/Page"
 import MidnightPage from "./midnight/Page"
+import Mayak from "./mayak"
+import Aqua from "./aqua"
 
 export const Page = () => {
     return (
@@ -77,6 +79,23 @@ export const Page = () => {
                                 </div>
                             </div>
 
+                        </Tabs.Item>
+                        <Tabs.Item label="이덴티스크 마약 시뮬레이터" value="6" >
+                            <div className={classNames(
+                                'w-full',
+                                'my-8',
+                            )}>
+                                <Card>
+                                    <p className={classNames(
+                                        'text-sm',
+                                        'py-2',
+                                    )}>🙏 포인트 꼬였으면 새로고침 한 번 진행해 주실게요~!</p>
+                                </Card>
+                            </div>
+                            <Mayak />
+                        </Tabs.Item>
+                        <Tabs.Item label="아쿠아 어드벤쳐" value="7" >
+                            <Aqua/>
                         </Tabs.Item>
                     </Tabs>
                 </div>
