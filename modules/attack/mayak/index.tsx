@@ -19,6 +19,10 @@ export const Mayak = () => {
         setPt(520)
         setLv(Array(16).fill(0))
     }
+
+    const handleShare = () => {
+
+    }
     return (
         <div className={classNames(
             'w-2/3',
@@ -39,7 +43,17 @@ export const Mayak = () => {
                 'font-bold',
             )}>마약 포인트 {pt} / 520</div>
             <p className='text-center text-gray-400 pb-4'>레벨 별 포인트 [ 5, 10 , 15 , 30 , 50 , 60 ]</p>
-            <Button onClick={handleReset} width={"100%"}>초기화하기</Button>
+
+            <div className={classNames(
+                'flex',
+                'justify-between',
+                'items-center',
+            )}>
+
+            <Button onClick={handleReset} width={"40%"}>초기화하기</Button>
+            <Button onClick={handleShare} width={"40%"}>찍은 스킬 복사하기</Button>
+            </div>
+
             <div className={classNames(
                 'grid',
                 'grid-cols-4',
