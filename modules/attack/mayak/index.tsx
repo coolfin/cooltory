@@ -19,10 +19,6 @@ export const Mayak = () => {
         setPt(520)
         setLv(Array(16).fill(0))
     }
-
-    const handleShare = () => {
-
-    }
     return (
         <div className={classNames(
             'w-2/3',
@@ -51,7 +47,29 @@ export const Mayak = () => {
             )}>
 
             <Button onClick={handleReset} width={"40%"}>초기화하기</Button>
-            <Button onClick={handleShare} width={"40%"}>찍은 스킬 복사하기</Button>
+            <Button onClick={() =>{
+                const tempRes = mayak.map((v, i) => {
+                    if (lv[i] === 0) return ""
+                    return [v[0], lv[i]]
+                }).filter((v) => v !== "")
+                
+                const res = tempRes.map((v) => {
+                    return `${v[0]} : ${v[1]}레벨`
+                }).join("\n")
+
+                if(res === "") {
+                    alert("아무것도 안찍었어요 ㅡㅡ")
+                    return
+                }
+                navigator.clipboard.writeText(res)
+                .then(() => {
+                    alert("복사되었습니다.")
+                })
+                .catch((e) => {
+                    alert("복사에 실패하였습니다.")
+                    console.log(e)
+                })
+            }} width={"40%"}>찍은 스킬 복사하기</Button>
             </div>
 
             <div className={classNames(
