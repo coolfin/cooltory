@@ -594,23 +594,10 @@ export const exp_event: DopingType[] = [
     getin : '확성기를 통해 주로 공지되며, 빠른이동 또는 B키 전문기술의 우상단 버튼을 통해 마이스터 빌 내에서 받으실 수 있습니다.'
   },
   {
-    url: 'potion',
-    title: '경험 축복의 비약',
-    content: "10%",
-    getin: '경험 축복의 비약 레시피를 통해 제작하실 수 있습니다. 10레벨 이상의 연금술 레벨을 권장드립니다. 2시간동안 지속됩니다.',
-  },
-  {
     url: 'skill',
     title: '홀리심볼',
     content: "[20-35]%",
     getin: '비숍이 아닌 직업은 5차스킬 V 공용코어로 쓰입니다.'
-  },
-
-  {
-    url: 'pendent',
-    title: '정령의 펜던트',
-    content: "[10-30]%",
-    getin: '이벤트 또는 출석 보상으로 획득하실 수 있습니다.'
   },
   {
     url: 'zero',
@@ -636,7 +623,6 @@ export const exp_event: DopingType[] = [
     content: "?%",
     getin: '이벤트 참여 시 추가로 얻을 수 있습니다.'
   },
-
   {
     url: 'rune',
     title: '사냥터 룬',

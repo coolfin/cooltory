@@ -105,7 +105,7 @@ function Page() {
                 </div>
 
                 <div>
-                    { num[1] >=0 && String.fromCharCode(65 + num[1]) + '코어'
+                    { num[1] >=0 && 
                     }
                 </div>
             </div>
