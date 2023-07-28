@@ -110,13 +110,7 @@ section {
   display: block;
 }
 body {
-  height: 100vh;
   line-height: 1;
-
-  background-image: url('/sellas3.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 ol,
 ul {
