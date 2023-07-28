@@ -1,5 +1,6 @@
 import { Button } from '@geist-ui/core'
 import classNames from 'classnames'
+import Image from 'next/image';
 import React, { useState } from 'react'
 
 export const MidnightPage = () => {
@@ -8,7 +9,6 @@ export const MidnightPage = () => {
   const handleImg = (container_index : number, index: number) => {
 
     const tempClick = [...imgClick]
-    console.log(tempClick)
     for(let i = 0; i < 9; i++) {
       for(let j = 0; j < 9; j++) {
         if(i === container_index) {
@@ -27,7 +27,6 @@ export const MidnightPage = () => {
   }
 
   const handleReset = () => {
-    alert("초기화 되었습니다.")
     setImgClick(Array(9).fill(0).map(() => Array(9).fill(false)))
   }
 
@@ -77,9 +76,6 @@ export const MidnightPage = () => {
             'border-slate-200',
             'border',
 
-            'shadow-md',
-            'shadow-purple-500',
-
             'grid',
             'grid-cols-3',
             'gap-1',
@@ -107,8 +103,7 @@ export const MidnightPage = () => {
                   //v는 selected[i]에서는 반대 기능을 해야 함
                   {'invisible': v},
                   )}>
-                 <img src={`/icon/chaser/${i+1}.png`} alt="미드나잇 체이서" /> 
-
+                 <Image src={`/icon/chaser/${i+1}.png`} alt="미드나잇 체이서" width={50} height={50} /> 
               </div>
 
             ))}
