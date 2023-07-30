@@ -1,35 +1,42 @@
-import { Container } from '@/components/Container'
-import { characters } from '@/data'
-import { Collapse, Table } from '@geist-ui/core'
-import classNames from 'classnames'
-import React from 'react'
+import { Container } from '@/components/Container';
+import { characters } from '@/data';
+import { Collapse, Table } from '@geist-ui/core';
+import classNames from 'classnames';
+import React from 'react';
 
 export const OrderPage = () => {
   return (
-    <Container className={classNames(
-      'max-sm:overflow-x-scroll',
-      'max-sm:text-xs',
-      'max-sm:whitespace-nowrap',
+    <Container
+      className={classNames(
+        'max-sm:overflow-x-scroll',
+        'max-sm:text-xs',
+        'max-sm:whitespace-nowrap',
 
-      'py-4',
-      'mt-12',
-    )}>
-      <div className={classNames(
-        'w-fit',
+        'py-4',
+        'mt-12'
+      )}
+    >
+      <div
+        className={classNames(
+          'w-fit',
 
-        'max-sm:font-sm',
+          'max-sm:font-sm',
 
-        'mb-4',
-        'p-2',
+          'mb-4',
+          'p-2',
 
-        'rounded-md',
-        'hover:bg-white',
-        
-
-      )}>
-        <a href='https://docs.google.com/spreadsheets/d/12l0GoZA2Yyvil9sV0N9XTHDC7ym-hHi3gTPTdtjPEjE/edit?usp=sharing' target='_blank'>스프레드 시트에서 한 눈에 확인하기 </a>
+          'rounded-md',
+          'hover:bg-white'
+        )}
+      >
+        <a
+          href="https://docs.google.com/spreadsheets/d/12l0GoZA2Yyvil9sV0N9XTHDC7ym-hHi3gTPTdtjPEjE/edit?usp=sharing"
+          target="_blank"
+        >
+          스프레드 시트에서 한 눈에 확인하기{' '}
+        </a>
       </div>
-      <div className={classNames(
+      {/* <div className={classNames(
         'w-full',
         'grid',
         'grid-cols-1',
@@ -84,8 +91,7 @@ export const OrderPage = () => {
             모험가 궁수(어드벤쳐러 큐리어스)<br />
           </i>
         </Collapse>
-      </div>
-
+      </div> */}
 
       <Table data={characters}>
         <Table.Column prop="name" label="직업" />
@@ -95,7 +101,7 @@ export const OrderPage = () => {
         <Table.Column prop="uorder" label="유니온 순서" />
       </Table>
     </Container>
-  )
-}
+  );
+};
 
-export default OrderPage
+export default OrderPage;

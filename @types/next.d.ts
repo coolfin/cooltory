@@ -14,13 +14,10 @@ export type CharacterType = {
   uorder: string;
 };
 
-export type DopingType ={
+export type DopingType = {
   url: string;
   title: string;
-  content: string;
-
-  getin: string;
-}
+};
 
 export type UserType = {
   //기본정보
@@ -35,53 +32,52 @@ export type UserType = {
   spec: Object;
 
   error?: string;
-}
+};
 
 type StatType = {
-  str: number,
-  dex: number,
-  int: number,
-  luk: number,
-  statAtkHigh: number,
-  statAtkLow: number,
-  critDmg: number,
-  bossDmg: number,
-  ignoreDef: number,
-  arcaneForce: number,
-}
+  str: number;
+  dex: number;
+  int: number;
+  luk: number;
+  statAtkHigh: number;
+  statAtkLow: number;
+  critDmg: number;
+  bossDmg: number;
+  ignoreDef: number;
+  arcaneForce: number;
+};
 
 export type EquipType = {
-  name: string,
-  imageUrl: string,
-  category: string,
-  upgrade: number,
-  base : {
-    str: number,
-    dex: number,
-    int: number,
-    luk: number,
-    hp: number,
-    mp: number,
-    atk: number,
-    mAtk: number,
-
-  },
-  scroll : {
-    str: number,
-    dex: number,
-    int: number,
-    luk: number,
-    hp: number,
-    mp: number,
-    atk: number,
-    mAtk: number,
-  },
-  grade: string,
-  star: number,
+  name: string;
+  imageUrl: string;
+  category: string;
+  upgrade: number;
+  base: {
+    str: number;
+    dex: number;
+    int: number;
+    luk: number;
+    hp: number;
+    mp: number;
+    atk: number;
+    mAtk: number;
+  };
+  scroll: {
+    str: number;
+    dex: number;
+    int: number;
+    luk: number;
+    hp: number;
+    mp: number;
+    atk: number;
+    mAtk: number;
+  };
+  grade: string;
+  star: number;
   potential: {
-    grade: string,
-    effects: { [key: string]: number}[]
-  },
-  flame: {},
-  scissors: number,
-}
+    grade: string;
+    effects: { [key: string]: number }[];
+  };
+  flame: {};
+  scissors: number;
+};
