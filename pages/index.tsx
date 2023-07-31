@@ -1,11 +1,13 @@
 import { Container } from '@/components/Container';
-import styled from '@emotion/styled';
-import { Tabs } from '@geist-ui/core';
+import { Button } from '@geist-ui/core';
 import classNames from 'classnames';
-import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 
 export default function Home() {
-  const [name, setName] = useState('');
+  const router = useRouter();
+  function handleDiscord() {
+    router.push('https://discord.gg/Hm2ezTUWwk');
+  }
 
   return (
     <Container
@@ -17,15 +19,14 @@ export default function Home() {
         'flex',
         'flex-col',
         'justify-center',
-        'items-center',
-
-        'text-3xl',
-        'text-white',
-        'font-extrabold'
+        'items-center'
       )}
     >
-      환영합니다 🙌
+      <p className={classNames('text-3xl', 'text-white', 'font-extrabold')}>
+        환영합니다 🙌
+      </p>
       <br />
+      <Button onClick={handleDiscord}>뽀삐길드 디스코드 바로가기</Button>
     </Container>
   );
 }
